@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+   <h3> PLEASE SEE THE CONSOLE FOR OUTPUT</h3>
+
+   <script>
+    var copy;
+    function isAscOrder(numbers){
+        copy = numbers;
+        return copy === numbers.sort();
+    }
+
+    console.log(isAscOrder([1, 2, 4, 7, 19]));
+    console.log(isAscOrder([1, 2, 3, 4, 5]));
+    console.log(isAscOrder([1, 6, 10, 18, 2, 4, 20]));
+    console.log(isAscOrder([9, 8, 7, 6, 5, 4, 3, 2, 1]));
+</script>
+    
+</body>
+
+</html>

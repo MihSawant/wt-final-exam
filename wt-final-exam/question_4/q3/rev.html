@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       function reverseInt(str) {
+ const revArray = [];
+ const length = str.length - 1;
+  
+
+ for(let i = length; i >= 0; i--) {
+     revArray.push(str[i]);
+ }
+  
+ 
+ return revArray.join('');
+}
+    console.log(reverseInt(123));
+    console.log(reverseInt(-321));
+    </script>
+</body>
+</html>

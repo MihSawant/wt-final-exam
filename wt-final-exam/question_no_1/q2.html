@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Theme</title>
+    <style>
+        body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+    </style>
+</head>
+
+<body>
+    <p>orem ipsum dolor sit amet, 
+        consectetur adipiscing elit. Maecenas laoreet quis dolor at efficitur. 
+        Vivamus sit amet rutrum mauris. Morbi euismod purus ac nulla luctus, vitae pretium dolor dictum. Donec sit amet nulla ac elit porta pharetra. Sed commodo vestibulum arcu, ac mattis magna aliquet eu. Nulla est eros, malesuada non vehicula id, molestie vitae ligula. Vestibulum pharetra eu leo vitae hendrerit. Nunc mauris felis, varius vel nisi vehicula, tristique blandit nisi. Aenean non aliquet quam, in iaculis odio. 
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        
+        <button id="btn" onclick="darkMode()">Dark Mode</button>
+ 
+ <script>
+    var btn = document.getElementById('btn');
+    function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  if(btn.innerText === 'Dark Mode'){
+    btn.innerText = 'Light Mode';
+  } else{
+    btn.innerText = 'Dark Mode';
+  }
+}
+  </script>  
+</body>
+</html>

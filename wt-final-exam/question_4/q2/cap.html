@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function capitalizeLetters(sentence){
+            var words = sentence.split(" ");
+            var capStr;
+            for(var i = 0; i < words.length; i++){
+                capStr += words[0] + words.substring(1);
+            }
+            return capStr;
+        }
+        console.log(capitalizeLetters('i love javascript'));
+    </script>
+</body>
+</html>
